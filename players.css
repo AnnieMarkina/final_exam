@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+.players {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.players__list {
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.players__card li {
+    list-style-type: none;
+    width: 30%;
+    margin-right: 30px;
+}
+
+.players__card {
+    position: relative;
+    width: 200px;
+    height: 231px;
+    margin-bottom: 40px;
+    /* border: 1px solid green; */
+}
+
+.players__card:hover {
+    transition: 1s;
+    border-radius: 12px;
+    background: #EEEEEE;
+    height: 267px;
+}
+
+.players__card:hover::after {
+    transition: 1s;
+    display: block;
+    white-space: pre;
+    content: "\A Basketball, $85.5M";
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #2F4F4F;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.players__card li a:nth-child(1) {
+    position: relative;
+}
+
+.players__card img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    margin-bottom: 8px;
+}
+
+.players__card a:nth-child(2) {
+    position: absolute;
+    display: block;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #2F4F4F;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.player__number {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    top: 84px;
+    right: 10px;
+    z-index: 1;
+    width: 32px;
+    height: 32px;
+}
+
+.player__number span {
+    position: absolute;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #8B0000;
+    left: 35%;
+    top: 25%;
+    z-index: 1;
+}
+
+.players__card img:hover {
+    transition: 1s;
+    border-radius: 60px;
+}
+
+@media (max-width: 1188px) {
+    .players {
+        width: 90%;
+    } 
+}
+
+@media (max-width: 1398px) {
+    .players {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .players {
+        width: 95%;
+    }
+}
+
+@media (max-width: 750px) {
+    .players {
+        width: 70%;
+    }
+}
+
+@media (max-width: 654px) {
+    .players {
+        width: 95%;
+    }
+}
+
+
+
+
